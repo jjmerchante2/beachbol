@@ -1,7 +1,8 @@
 name: Beachbol update hour
 on:
   schedule:
-  - cron: "1 * * * *"
+    - cron: "1 * * * *"
+  workflow_dispatch:
 jobs:
   update-hour:
     runs-on: ubuntu-latest
