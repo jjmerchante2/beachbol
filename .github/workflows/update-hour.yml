@@ -15,7 +15,7 @@ jobs:
       - name: Get current reservation hour
         id: hour
         run: |
-          a=$(curl -s -XGET https://beachbol.beachliga.com | grep window._rop
+          a=$(curl -s -XGET https://beachbol.beachliga.com | grep window._rop)
           a="${a#*\'}"
           a="${a%\'*}"
           echo $a > hour
