@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v3
       - name: Configure Git
         run: |
-          git config --global user.name "Jose"
-          git config --global user.email "jjmer@gmail.com"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
       - name: Get current reservation hour
         id: hour
         run: |
