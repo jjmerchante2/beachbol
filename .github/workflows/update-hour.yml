@@ -22,6 +22,8 @@ jobs:
           updated=$(git diff hour | wc -l)
           if [ $updated -gt 0 ]
           then
+            echo $(date) > updated
+            git add updated
             git add hour
             git commit -m "Update hour"
             git push
