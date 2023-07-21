@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Beachbol</title>
+   </head>
+   <body>
+      <h1 id="hour"></h1>
+   </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+$.get("/hour", { cache: false }, function(data, status){
+    $('#hour').text(data);
+});
+</script>
